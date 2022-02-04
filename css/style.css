@@ -55,8 +55,10 @@ main {
 main nav.sidenav {
     height: 100%;
     width: 17vw;
+    min-height: 134px;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 main nav.sidenav div.navigation {
@@ -92,6 +94,11 @@ main nav.sidenav div.navigation>p {
     font-size: 12px;
 
     margin: 1rem .2rem;
+}
+
+main nav.sidenav div.navigation ul.playlist {
+    max-height: 40vh;
+    overflow: auto;
 }
 
 main nav.sidenav div.navigation ul.playlist li {
@@ -181,4 +188,8 @@ main section.main-section div.call-to-action a.call-btn {
 footer#controls {
     width: 100vw;
     height: 8vh;
+
+    min-height: 60px;
+
+    z-index: 10;
 }
