@@ -1,3 +1,6 @@
+/* Imports */
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
 /* RESET */
 * {
     box-sizing: border-box;
@@ -23,6 +26,11 @@
     background-color: rgb(38, 38, 38);
 }
 
+/* HTML/Body behavior */
+body {
+    font-family: 'Circular Std', sans-serif;
+}
+
 
 /* Desktop-First */
 /* Main */
@@ -40,17 +48,34 @@ main div.call-to-action {
     height: 8vh;
 
     background-color: rgba(0, 0, 0, 0.363);
+
+    justify-content: end;
+    align-items: center;
+}
+
+main div.call-to-action a.call-btn {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    padding: .6rem 2.5rem;
+    margin-right: .4rem;
+
+    border: 1px solid white;
+    border-radius: 1.5rem;
+
 }
 
 main nav.sidenav {
-    display: inline-block;
     height: 100%;
     width: 17vw;
     background-color: yellow;
 }
 
+
+
 main section.main-section {
-    display: inline-block;
     height: 100%;
     width: 83vw;
 
