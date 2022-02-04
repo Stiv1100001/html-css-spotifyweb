@@ -4,3 +4,62 @@
     margin: 0;
     padding: 0;
 }
+
+/* Layout utility */
+.relative {
+    position: relative;
+}
+
+.flexbox-container {
+    display: flex;
+}
+
+/* Color utility */
+.bg-black {
+    background-color: black;
+}
+
+.bg-darkgray {
+    background-color: rgb(38, 38, 38);
+}
+
+
+/* Desktop-First */
+/* Main */
+main {
+    width: 100vw;
+    height: 92vh;
+}
+
+main div.call-to-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 8vh;
+
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+main nav.sidenav {
+    display: inline-block;
+    height: 100%;
+    width: 17vw;
+    background-color: yellow;
+}
+
+main section.main-section {
+    display: inline-block;
+    height: 100%;
+    width: 83vw;
+
+    background-color: cyan;
+}
+
+
+/* Footer */
+footer#controls {
+    width: 100vw;
+    height: 8vh;
+}
