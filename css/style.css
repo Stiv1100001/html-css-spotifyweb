@@ -26,6 +26,10 @@
     background-color: rgb(38, 38, 38);
 }
 
+.bg-darkblue {
+    background-color: rgb(20, 25, 34);
+}
+
 /* HTML/Body behavior */
 body {
     font-family: 'Circular Std', sans-serif;
@@ -39,12 +43,27 @@ main {
     height: 92vh;
 }
 
-main div.call-to-action {
+main nav.sidenav {
+    height: 100%;
+    width: 17vw;
+}
+
+main nav.sidenav div.navigation img {
+    width: 100%;
+    padding: 0.5rem 3.5rem;
+}
+
+main section.main-section {
+    height: 100%;
+    width: 83vw;
+}
+
+main section.main-section div.call-to-action {
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 100vw;
+    width: 100%;
     height: 8vh;
 
     background-color: rgba(0, 0, 0, 0.363);
@@ -53,7 +72,7 @@ main div.call-to-action {
     align-items: center;
 }
 
-main div.call-to-action a.call-btn {
+main section.main-section div.call-to-action a.call-btn {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -65,21 +84,6 @@ main div.call-to-action a.call-btn {
     border: 1px solid white;
     border-radius: 1.5rem;
 
-}
-
-main nav.sidenav {
-    height: 100%;
-    width: 17vw;
-    background-color: yellow;
-}
-
-
-
-main section.main-section {
-    height: 100%;
-    width: 83vw;
-
-    background-color: cyan;
 }
 
 
