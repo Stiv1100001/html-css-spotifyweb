@@ -7,21 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    <link crossorigin="anonymous" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <main class="flexbox-container bg-black">
-        <nav class="sidenav bg-black">
-            <div class="navigation">
+        <nav class="sidenav flexbox-container bg-black">
+            <div class="navigation flexbox-container">
                 <img src="img/logo.svg" alt="Spotify logo">
+                <ul>
+                    <li class="active">
+                        <a href="#" class="text-white">
+                            <i class="fas fa-home fa-2x"></i>
+                            Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-search fa-2x"></i>
+                            Cerca
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-book fa-2x"></i>
+                            La tua libreria
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-white">playlist</p>
+                <ul class="playlist">
+                    <li>
+                        <a class="text-gray" href="#">
+                            <i class="fas fa-plus"></i> Crea Playlist</a>
+                    </li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                    <li><a class="text-gray" href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
+
+            <div class="profile-option">
+                <div class="install">
+                    <p class="text-gray"><i class="fas fa-arrow-circle-down"></i>Installa app</p>
+                </div>
+                <div class="profile">
+                    <p class="text-white">
+                        <i class="fas fa-user"></i>
+                        John Doe
+                    </p>
+                </div>
             </div>
         </nav>
 
         <section class="main-section relative bg-darkblue">
             <div class="call-to-action flexbox-container">
-                <a href="#" class="call-btn">Effettua l'upgrade</a>
+                <a href="#" class="call-btn text-white">Effettua l'upgrade</a>
             </div>
         </section>
     </main>
