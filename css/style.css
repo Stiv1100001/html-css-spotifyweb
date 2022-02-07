@@ -211,6 +211,12 @@ main section.main-section div.call-to-action a.call-btn {
 
     border: 1px solid white;
     border-radius: 1.5rem;
+
+    transition: all .5s;
+}
+
+main section.main-section div.call-to-action a.call-btn:hover {
+    transform: scale(1.1);
 }
 
 main section.main-section div.categories {
