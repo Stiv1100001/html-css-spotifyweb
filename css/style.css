@@ -211,9 +211,62 @@ main section.main-section div.call-to-action a.call-btn {
 
     border: 1px solid white;
     border-radius: 1.5rem;
-
 }
 
+main section.main-section div.categories {
+    margin-top: 75px;
+    margin-bottom: 4rem;
+}
+
+main section.main-section div.categories ul {
+    justify-content: space-around;
+    padding: 0 15rem;
+}
+
+main section.main-section div.categories ul li {
+    list-style: none;
+}
+
+main section.main-section div.categories ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main section.main-section div.music {
+    padding: 0 2rem;
+}
+
+main section.main-section div.music h4.subtitle {
+    font-size: 13px;
+}
+
+main section.main-section div.music div.carousel {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+main section.main-section div.music div.carousel div.album {
+    flex-direction: column;
+    width: calc(100% / 6 - 1.5rem);
+    text-align: center;
+}
+
+main section.main-section div.music div.carousel div.album img {
+    width: 100%;
+}
+
+main section.main-section div.music div.carousel div.album h6 {
+    margin-top: .5rem;
+    font-size: 18px;
+}
+
+main section.main-section div.music div.carousel div.album p {
+    margin-top: .3rem;
+    font-size: 12px;
+}
 
 /* Footer */
 footer#controls {
