@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <link crossorigin="anonymous" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -22,18 +24,18 @@
                 <ul>
                     <li class="active">
                         <a href="#" class="text-white">
-                            <i class="fas fa-home fa-2x"></i>
+                            <img src="img/home.svg" alt="Home">
                             Home</a>
                     </li>
                     <li>
                         <a href="#" class="text-white">
-                            <i class="fas fa-search fa-2x"></i>
+                            <img src="img/search.svg" alt="Search">
                             Cerca
                         </a>
                     </li>
                     <li>
                         <a href="#" class="text-white">
-                            <i class="fas fa-book fa-2x"></i>
+                            <img src="img/libreria.svg" alt="Library">
                             La tua libreria
                         </a>
                     </li>
@@ -74,7 +76,43 @@
         </section>
     </main>
 
-    <footer id="controls" class="relative bg-darkgray"></footer>
+    <footer id="controls" class="flexbox-container relative bg-darkgray">
+        <div id="current-playing" class="flexbox-container">
+            <img src="img/sinister.jpeg" alt="Sinister">
+            <div class="song-info flexbox-container">
+                <h6 class="title text-white">Sinister</h6>
+                <p class="author text-gray">Brano nome</p>
+            </div>
+            <div class="buttons text-gray">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+        <div id="control-buttons" class="flexbox-container">
+            <div class="buttons text-white flexbox-container">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="position flexbox-container">
+                <span class="text-white">0:25</span>
+                <!-- TODO Update to slider -->
+                <div class="line relative">
+                    <hr class="lower">
+                    <hr class="upper">
+                </div>
+                <span class="text-white">4:35</span>
+            </div>
+        </div>
+        <div id="control-player" class="text-white">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <input type="range" min="0" max="0" value="20" title="volume">
+        </div>
+    </footer>
 
 </body>
 

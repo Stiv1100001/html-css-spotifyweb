@@ -43,18 +43,48 @@ body {
     font-family: 'Circular Std', sans-serif;
 }
 
+/* General */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    height: 5px;
+
+    background: rgb(105, 105, 105);
+    outline: none;
+
+    opacity: .7;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 10px;
+    height: 10px;
+
+    background: white;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+}
 
 /* Desktop-First */
 /* ! Main */
 main {
     width: 100vw;
-    height: 92vh;
+    height: calc(100vh - 81px);
 }
 
 /* * Sidenav */
 main nav.sidenav {
     height: 100%;
-    width: 17vw;
+    width: 250px;
     min-height: 134px;
     flex-direction: column;
     justify-content: space-between;
@@ -82,11 +112,16 @@ main nav.sidenav div.navigation ul li.active {
 main nav.sidenav div.navigation ul li a {
     text-decoration: none;
     font-weight: 450;
-    font-size: 12px;
+    font-size: 17px;
+    line-height: 30px;
 }
 
-main nav.sidenav div.navigation ul li a i {
-    margin: 0 .3rem;
+main nav.sidenav div.navigation ul li a img {
+
+    width: 35px;
+
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 main nav.sidenav div.navigation>p {
@@ -103,7 +138,7 @@ main nav.sidenav div.navigation ul.playlist {
 
 main nav.sidenav div.navigation ul.playlist li {
     font-size: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 
 main nav.sidenav div.navigation ul.playlist li i {
@@ -117,11 +152,7 @@ main nav.sidenav div.navigation ul.playlist li i {
 
 main nav.sidenav div.profile-option {
     width: 100%;
-    /* height: 8vh; */
-
     padding: .7rem;
-
-
 }
 
 main nav.sidenav div.profile-option div.install {
@@ -153,7 +184,8 @@ main nav.sidenav div.profile-option div.profile i.fas.fa-user {
 /* * Main Section */
 main section.main-section {
     height: 100%;
-    width: 83vw;
+    width: calc(100% - 250px);
+    overflow-y: auto;
 }
 
 main section.main-section div.call-to-action {
@@ -187,9 +219,91 @@ main section.main-section div.call-to-action a.call-btn {
 /* Footer */
 footer#controls {
     width: 100vw;
-    height: 8vh;
+    height: 80px;
 
     min-height: 60px;
 
     z-index: 10;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer#controls div#current-playing {
+    align-items: center;
+}
+
+footer#controls div#current-playing img {
+    height: 70px;
+    padding: .8rem;
+}
+
+footer#controls div#current-playing div.song-info {
+    flex-direction: column;
+}
+
+footer#controls div#current-playing div.song-info h6.title {
+    font-size: 15px;
+}
+
+footer#controls div#current-playing div.song-info p.author {
+    font-size: 12px;
+}
+
+footer#controls div#current-playing div.buttons {
+    margin-left: 3rem;
+}
+
+footer#controls div#current-playing div.buttons i {
+    margin-left: .5rem;
+}
+
+footer#controls div#control-buttons {
+    flex-direction: column;
+}
+
+footer#controls div#control-buttons div.buttons {
+    justify-content: center;
+    align-items: center;
+}
+
+footer#controls div#control-buttons div.buttons i {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+footer#controls div#control-buttons div.buttons i.fa-play-circle {
+    font-size: 2.5rem;
+}
+
+footer#controls div#control-buttons div.position {
+    margin-top: .3rem;
+    align-items: center;
+    font-size: 12px;
+}
+
+footer#controls div#control-buttons div.position hr {
+    margin: 0 1rem;
+    width: 30vw;
+}
+
+footer#controls div#control-buttons div.position hr.lower {
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 1%;
+}
+
+footer#controls div#control-buttons div.position hr.upper {
+    position: absolute;
+    border: 2px solid white;
+    top: 0;
+    border-radius: 5%;
+    width: 10vw;
+}
+
+footer#controls div#control-player {
+    margin-right: 1rem;
+}
+
+footer#controls div#control-player i {
+    margin: 0 .3rem;
 }
