@@ -350,7 +350,7 @@ footer#controls {
 
     z-index: 10;
 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -411,6 +411,10 @@ footer#controls div#control-buttons div.buttons i.fa-play-circle {
     font-size: 2.5rem;
 }
 
+footer#controls div#control-buttons div.buttons i.fa-play-circle:hover {
+    transform: scale(1.2);
+}
+
 footer#controls div#control-buttons div.position {
     margin-top: .3rem;
     align-items: center;
@@ -435,9 +439,62 @@ footer#controls div#control-buttons div.position hr.upper {
     width: 10vw;
 }
 
+footer#controls div#control-buttons div.position div.pointer {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 33%;
+
+    transform: translateY(-35%);
+
+    border-radius: 50%;
+}
+
+footer#controls div#control-buttons div.position:hover div.pointer {
+    display: block;
+}
+
 footer#controls div#control-player {
     margin-right: 1rem;
     width: 300px;
+
+    align-items: center;
+}
+
+footer#controls div#control-player div.volume {
+    width: 200px;
+}
+
+footer#controls div#control-player div.volume hr.lower {
+    border: 2px solid gray;
+}
+
+footer#controls div#control-player div.volume hr.upper {
+    position: absolute;
+    top: 0;
+
+    border: 2px solid white;
+    width: 50px;
+}
+
+footer#controls div#control-player div.volume div.pointer {
+    display: none;
+    position: absolute;
+    top: -5px;
+
+    left: 23%;
+    background-color: white;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+footer#controls div#control-player div.volume:hover div.pointer {
+    display: inline-block;
 }
 
 footer#controls div#control-player i {
