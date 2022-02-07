@@ -242,6 +242,7 @@ main section.main-section div.categories {
 main section.main-section div.categories ul {
     justify-content: space-around;
     column-gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 main section.main-section div.categories ul li {
@@ -349,17 +350,22 @@ footer#controls {
 
     z-index: 10;
 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 footer#controls div#current-playing {
     align-items: center;
+    justify-content: space-between;
+}
+
+footer#controls div#current-playing .left {
+    align-items: center;
 }
 
 footer#controls div#current-playing img {
     height: 70px;
-    padding: .8rem;
+    padding: .8rem .8rem .8rem 0;
 }
 
 footer#controls div#current-playing div.song-info {
@@ -378,10 +384,6 @@ footer#controls div#current-playing div.song-info:hover p.author {
     color: white;
 }
 
-footer#controls div#current-playing div.buttons {
-    margin-left: 3rem;
-}
-
 footer#controls div#current-playing div.buttons i {
     margin-left: .5rem;
 }
@@ -397,6 +399,7 @@ footer#controls div#control-buttons {
 footer#controls div#control-buttons div.buttons {
     justify-content: center;
     align-items: center;
+    flex-shrink: 5;
 }
 
 footer#controls div#control-buttons div.buttons i {
@@ -434,6 +437,7 @@ footer#controls div#control-buttons div.position hr.upper {
 
 footer#controls div#control-player {
     margin-right: 1rem;
+    width: 300px;
 }
 
 footer#controls div#control-player i {
