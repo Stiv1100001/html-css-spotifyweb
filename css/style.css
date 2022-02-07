@@ -235,6 +235,7 @@ main section.main-section div.categories ul li a {
 }
 
 main section.main-section div.music {
+    margin-top: 3rem;
     padding: 0 2rem;
 }
 
@@ -256,6 +257,10 @@ main section.main-section div.music div.carousel div.album {
 
 main section.main-section div.music div.carousel div.album img {
     width: 100%;
+}
+
+main section.main-section div.music#artists div.carousel div.album img {
+    border-radius: 50%;
 }
 
 main section.main-section div.music div.carousel div.album h6 {
