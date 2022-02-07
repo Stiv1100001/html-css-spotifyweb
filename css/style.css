@@ -230,11 +230,12 @@ main section.main-section div.call-to-action a.call-btn:hover {
 main section.main-section div.categories {
     margin-top: 75px;
     margin-bottom: 4rem;
+    justify-content: center;
 }
 
 main section.main-section div.categories ul {
     justify-content: space-around;
-    padding: 0 15rem;
+    column-gap: 1.5rem;
 }
 
 main section.main-section div.categories ul li {
