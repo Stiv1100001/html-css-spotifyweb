@@ -436,8 +436,15 @@ footer#controls div#control-player i {
 
 
 /* Lg Screen */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
     main section.main-section div.music div.carousel div.album {
         width: calc(100% / 4 - 1.5rem);
+    }
+}
+
+/* Md Screen */
+@media screen and (max-width: 768px) {
+    main section.main-section div.music div.carousel div.album {
+        width: calc(100% / 2 - 1.5rem);
     }
 }
