@@ -103,6 +103,10 @@ main nav.sidenav div.navigation ul li {
     border-left: solid 2px black;
 }
 
+main nav.sidenav div.navigation ul li:hover a {
+    color: white;
+}
+
 main nav.sidenav div.navigation ul li.active {
     border-left: solid 2px greenyellow;
 }
@@ -162,6 +166,10 @@ main nav.sidenav div.profile-option div.install {
 main nav.sidenav div.profile-option div.install {
     border-bottom: 1px solid gray;
     padding: 10px 0;
+}
+
+main nav.sidenav div.profile-option div.install:hover p {
+    color: white;
 }
 
 main nav.sidenav div.profile-option div.install i.fas.fa-arrow-circle-down {
@@ -233,11 +241,25 @@ main section.main-section div.categories ul li {
     list-style: none;
 }
 
+main section.main-section div.categories ul li:hover a {
+    color: white;
+}
+
 main section.main-section div.categories ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
+}
+
+main section.main-section div.categories ul li hr.active {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 1px greenyellow solid;
+    width: 30px;
 }
 
 main section.main-section div.music {
@@ -345,12 +367,20 @@ footer#controls div#current-playing div.song-info p.author {
     font-size: 12px;
 }
 
+footer#controls div#current-playing div.song-info:hover p.author {
+    color: white;
+}
+
 footer#controls div#current-playing div.buttons {
     margin-left: 3rem;
 }
 
 footer#controls div#current-playing div.buttons i {
     margin-left: .5rem;
+}
+
+footer#controls div#current-playing div.buttons i:hover {
+    color: white;
 }
 
 footer#controls div#control-buttons {
