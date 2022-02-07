@@ -220,7 +220,7 @@ main section.main-section div.call-to-action a.call-btn {
     font-size: 12px;
 
     padding: .6rem 2.5rem;
-    margin-right: .4rem;
+    margin-right: 1rem;
 
     border: 1px solid white;
     border-radius: 1.5rem;
@@ -355,6 +355,7 @@ footer#controls {
 }
 
 footer#controls div#current-playing {
+    margin-left: 1rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -382,6 +383,10 @@ footer#controls div#current-playing div.song-info p.author {
 
 footer#controls div#current-playing div.song-info:hover p.author {
     color: white;
+}
+
+footer#controls div#current-playing div.buttons {
+    margin-left: 2rem;
 }
 
 footer#controls div#current-playing div.buttons i {
@@ -459,8 +464,6 @@ footer#controls div#control-buttons div.position:hover div.pointer {
 
 footer#controls div#control-player {
     margin-right: 1rem;
-    width: 300px;
-
     align-items: center;
 }
 
