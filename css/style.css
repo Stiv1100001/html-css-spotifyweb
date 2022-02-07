@@ -433,3 +433,11 @@ footer#controls div#control-player {
 footer#controls div#control-player i {
     margin: 0 .3rem;
 }
+
+
+/* Lg Screen */
+@media screen and (max-width: 1200px) {
+    main section.main-section div.music div.carousel div.album {
+        width: calc(100% / 4 - 1.5rem);
+    }
+}
