@@ -453,10 +453,11 @@ footer#controls div#control-buttons div.position:hover div.pointer {
 footer#controls div#control-player {
     margin-right: 1rem;
     align-items: center;
+    width: 20%;
 }
 
 footer#controls div#control-player div.volume {
-    width: 200px;
+    width: 50%;
 }
 
 footer#controls div#control-player div.volume hr.lower {
@@ -476,12 +477,12 @@ footer#controls div#control-player div.volume div.pointer {
     position: absolute;
     top: -5px;
 
-    left: 23%;
+    left: 50%;
     background-color: white;
 
     width: 15px;
     height: 15px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 footer#controls div#control-player div.volume:hover div.pointer {
@@ -501,7 +502,14 @@ footer#controls div#control-player i {
 
     footer#controls div#control-player {
         margin-right: 0px;
-        padding-left: 10px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    footer#controls div#control-player div.volume div.pointer {
+        left: 55%;
     }
 }
 
