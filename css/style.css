@@ -56,22 +56,6 @@ input[type="range"] {
     opacity: .7;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-
-    width: 10px;
-    height: 10px;
-
-    color: white;
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 10px;
-    height: 10px;
-    color: white;
-}
-
 /* Desktop-First */
 /* ! Main */
 main {
@@ -183,12 +167,15 @@ main nav.sidenav div.profile-option div.install i.fas.fa-arrow-circle-down {
 
 main nav.sidenav div.profile-option div.profile {
     padding: 10px 0 0 0;
+    line-height: 30px;
 }
 
-main nav.sidenav div.profile-option div.profile i.fas.fa-user {
+main nav.sidenav div.profile-option div.profile img {
+    width: 30px;
     background-color: rgb(105, 105, 105);
-    padding: .4rem;
+    padding: .25rem;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 
@@ -200,11 +187,12 @@ main section.main-section {
 }
 
 main section.main-section div.call-to-action {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    z-index: 2;
 
-    width: 100%;
+    width: calc(100% - 250px);
     height: 75px;
     min-height: 75px;
 
