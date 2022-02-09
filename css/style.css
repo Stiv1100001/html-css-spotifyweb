@@ -171,6 +171,7 @@ main nav.sidenav div.profile-option div.profile {
 }
 
 main nav.sidenav div.profile-option div.profile img {
+    display: inline-block;
     width: 30px;
     background-color: rgb(105, 105, 105);
     padding: .25rem;
@@ -178,6 +179,9 @@ main nav.sidenav div.profile-option div.profile img {
     vertical-align: middle;
 }
 
+main nav.sidenav div.profile-option div.profile p {
+    display: inline-block;
+}
 
 /* * Main Section */
 main section.main-section {
@@ -527,8 +531,22 @@ footer#controls div#control-player i {
     main nav.sidenav div.navigation ul li a,
     main nav.sidenav div.navigation>p,
     main nav.sidenav div.navigation ul.playlist,
-    main nav.sidenav div.profile-option {
+    main nav.sidenav div.profile-option div.profile p,
+    main nav.sidenav div.profile-option div.install span {
         display: none;
+    }
+
+    main nav.sidenav div.profile-option div.install {
+        border-bottom: none;
+    }
+
+    main nav.sidenav div.profile-option {
+        padding: .2rem;
+    }
+
+    main nav.sidenav div.profile-option div.install i.fas.fa-arrow-circle-down {
+        margin: 0 25%;
+        font-size: 15px;
     }
 
     main nav.sidenav div.navigation img#small-logo {
