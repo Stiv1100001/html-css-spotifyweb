@@ -436,6 +436,10 @@ footer#controls div#control-buttons div.position hr.upper {
     width: 10vw;
 }
 
+footer#controls div#control-buttons div.position:hover hr.upper {
+    border: 2px solid greenyellow;
+}
+
 footer#controls div#control-buttons div.position div.pointer {
     display: none;
     position: absolute;

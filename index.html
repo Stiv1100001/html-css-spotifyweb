@@ -17,9 +17,12 @@
 
 <body>
 
+    <!-- Main -->
     <main class="flexbox-container bg-black">
+        <!-- Sidenav -->
         <nav class="sidenav flexbox-container bg-black">
             <div class="navigation flexbox-container">
+                <!-- Sections -->
                 <img id="big-logo" src="img/logo.svg" alt="Spotify logo">
                 <img id="small-logo" src="img/logo-small.svg" alt="Spotify logo">
                 <ul>
@@ -41,6 +44,7 @@
                         </a>
                     </li>
                 </ul>
+                <!-- Playlist -->
                 <p class="text-white">playlist</p>
                 <ul class="playlist">
                     <li>
@@ -57,6 +61,7 @@
                 </ul>
             </div>
 
+            <!-- Profile option -->
             <div class="profile-option">
                 <div class="install">
                     <i class="fas fa-arrow-circle-down text-gray"></i>
@@ -71,6 +76,7 @@
             </div>
         </nav>
 
+        <!-- Main content -->
         <section class="main-section relative bg-darkblue">
             <div class="call-to-action flexbox-container">
                 <a href="#" class="call-btn text-white">Effettua l'upgrade</a>
@@ -88,6 +94,7 @@
                     <li><a href="3" class="text-gray">scopri</a></li>
                 </ul>
             </div>
+            <!-- Album section -->
             <div class="music">
                 <h1 class="title text-white">Recently played</h1>
                 <div class="carousel flexbox-container">
@@ -177,6 +184,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Artists section -->
             <div class="music" id="artists">
                 <h1 class="title text-white">Artisti più popolari</h1>
                 <h4 class="subtitle text-gray">Più ascolti, più accurati saranno i suggerimenti</h4>
@@ -204,7 +213,9 @@
         </section>
     </main>
 
+    <!-- Footer controls -->
     <footer id="controls" class="flexbox-container relative bg-darkgray">
+        <!-- Current playing -->
         <div id="current-playing" class="flexbox-container">
             <div class="left flexbox-container">
                 <img src="img/sinister.jpeg" alt="Sinister">
@@ -218,6 +229,7 @@
                 <i class="far fa-folder"></i>
             </div>
         </div>
+        <!-- Music elapsed -->
         <div id="control-buttons" class="flexbox-container">
             <div class="buttons text-white flexbox-container">
                 <i class="fas fa-random"></i>
@@ -236,6 +248,7 @@
                 <span class="text-white">4:35</span>
             </div>
         </div>
+        <!-- Device control -->
         <div id="control-player" class="flexbox-container text-white">
             <i class="fas fa-list"></i>
             <i class="fas fa-desktop"></i>
